@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand" aria-label="Inicio">MiMarca</a>
+
+            <ul class="navbar-menu" role="menubar" aria-label="Menú principal">
+                <li role="none"><a role="menuitem" href="#">Inicio</a></li>
+                <li role="none"><a role="menuitem" href="#">Acerca</a></li>
+                <li role="none"><a role="menuitem" href="#">Servicios</a></li>
+                <li role="none"><a role="menuitem" href="#">Contacto</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <form class="navbar-search" role="search" aria-label="Buscar">
+                    <label for="search" class="sr-only">Buscar</label>
+                    <input id="search" type="search" name="q" placeholder="Buscar">
+                    <button type="submit">Buscar</button>
+                </form>
+                <a class="btn btn-primary" href="#">Iniciar sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Utilidad accesible mínima -->
+    <style>
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+    </style>
 </body>
 </html>
