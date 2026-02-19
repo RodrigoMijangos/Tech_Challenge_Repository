@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Prueba</title>
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="Navegación principal">
         <div class="navbar-container">
-            <a href="/" class="navbar-brand" aria-label="Inicio">MiMarca</a>
+            <a href="/" class="navbar-brand" aria-label="Inicio">Pagina de prueba principal</a>
 
             <ul class="navbar-menu" role="menubar" aria-label="Menú principal">
                 <li role="none"><a role="menuitem" href="#">Inicio</a></li>
@@ -28,9 +28,47 @@
         </div>
     </nav>
 
-    <!-- Utilidad accesible mínima -->
-    <style>
-        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-    </style>
+    <main id="main-content" role="main" aria-labelledby="article-title">
+        <article class="content-article">
+            <header>
+                <h1 id="article-title">Buenas prácticas en HTML: una guía breve</h1>
+                <p class="meta">Por Equipo de Desarrollo — <time datetime="2026-02-19">19 de febrero de 2026</time></p>
+            </header>
+
+            <section aria-labelledby="intro">
+                <h2 id="intro">Introducción</h2>
+                <p>
+                    HTML es la base de cualquier sitio web. Utilizarlo correctamente mejora la accesibilidad,
+                    el rendimiento y la mantenibilidad. Este artículo recoge prácticas recomendadas para escribir
+                    HTML claro y robusto.
+                </p>
+            </section>
+
+            <section aria-labelledby="principles">
+                <h2 id="principles">Principios claves</h2>
+                <ul>
+                    <li><strong>Semántica:</strong> usa etiquetas como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt; y &lt;footer&gt; para describir la estructura del contenido.</li>
+                    <li><strong>Accesibilidad:</strong> añade atributos ARIA cuando sea necesario, proporciona textos alternativos (alt) para imágenes y usa roles apropiados.</li>
+                    <li><strong>Orden lógico de encabezados:</strong> usa &lt;h1&gt;–&lt;h6&gt; según la jerarquía, sin saltos arbitrarios.</li>
+                    <li><strong>Formularios accesibles:</strong> etiqueta los controles con &lt;label&gt; y usa atributos como aria-label cuando el label visual no sea posible.</li>
+                    <li><strong>Enlaces descriptivos:</strong> evita textos genéricos como "haz clic aquí"; describe el destino del enlace.</li>
+                    <li><strong>Separación de responsabilidades:</strong> evita estilos en línea y scripts mezclados en el marcado; usa archivos CSS/JS externos.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="performance">
+                <h2 id="performance">Rendimiento y validación</h2>
+                <p>
+                    Valida tu HTML con herramientas como el validador de W3C, optimiza imágenes, carga recursos de forma diferida
+                    cuando sea posible y minimiza el tamaño de los archivos para mejorar tiempos de carga.
+                </p>
+            </section>
+
+            <footer>
+                <p>Resumen: escribe HTML semántico, accesible y mantenible. Pequeños hábitos producen grandes mejoras.</p>
+            </footer>
+        </article>
+    </main>
+
 </body>
 </html>
